@@ -23,17 +23,15 @@ def using_shift (array)
 end
 
 def shift_with_args(array)
-  ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-  ice_cream_brands.shift
-  ice_cream_brands
+  array.shift (2)
 end 
 
 def using_concat(array1, array2)
   array1.concat (["sports cars", "flatiron school"])
 end 
 
-def using_insert (array, element)
-  array.insert(element)
+def using_insert(array, element)
+  array.insert(4, element)
 end
 
 def using_uniq (array)
@@ -46,11 +44,10 @@ def using_flatten (array)
      instruments.flatten 
 end
 
-def using_delete (array)
-    array.delete
+def using_delete(array, string)
+  array.delete(string)
 end
 
 def using_delete_at (array, integer)
-    using_delete = ["Johnny 5", "R2D2", "Robocop"]
-    using_delete.delete_at(2)
+    array.delete_at (integer)
 end
